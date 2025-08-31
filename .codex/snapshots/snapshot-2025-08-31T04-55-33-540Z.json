@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "createdAt": "2025-08-31T04:55:33.540Z",
+    "tool": "context-snapshot.mjs",
+    "version": 1
+  },
+  "env": {
+    "node": "v23.3.0",
+    "npm": "11.4.2"
+  },
+  "repo": {
+    "branch": "feat/study-schedule-pages-tailwind",
+    "remotes": "origin\tgit@github.com:bnt10/study-ui.git (fetch)\norigin\tgit@github.com:bnt10/study-ui.git (push)",
+    "status": "## feat/study-schedule-pages-tailwind...origin/feat/study-schedule-pages-tailwind\n M package.json\n?? .codex/\n?? scripts/",
+    "lastCommits": "1fb6aae chore(vercel): add SPA rewrite and long-cache headers for Vite assets\n5aa365c feat: add study schedule table, filters, localStorage persistence, CSV import/export, per-row edit/delete; add per-topic pages (DP/Greedy/Graph) with hash router; integrate Tailwind v4 + PostCSS; add react-datepicker for date selection; add review tag editor\\n\\n- New: src/StudyScheduleTable.jsx with search, filters, CSV, edit/delete\\n- UI: Notion-style table, review selector (1일/3일/1주일), date picker\\n- Routing: tabs for #/dp, #/greedy, #/graph; DP visualizer on DP only\\n- Build: Tailwind v4 via @tailwindcss/postcss, index.css import, ESM config\\n- Misc: Local z-index and popover fixes for overlays\\n\n5ff9f67 Merge pull request #1 from bnt10/codex/create-basic-react-project\n1adeff5 Initialize React project\n9704358 Add VipSeatingVisualizer.jsx",
+    "diffNames": [
+      "package.json"
+    ]
+  },
+  "package": {
+    "name": "study-ui",
+    "version": "0.0.1",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "test": "echo \"No tests\"",
+      "snapshot": "node scripts/context-snapshot.mjs",
+      "restore": "node scripts/context-restore.mjs"
+    },
+    "deps": {
+      "date-fns": "^4.1.0",
+      "react": "^18.2.0",
+      "react-datepicker": "^8.7.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDeps": {
+      "@tailwindcss/postcss": "^4.1.12",
+      "@vitejs/plugin-react": "^4.0.0",
+      "autoprefixer": "^10.4.21",
+      "postcss": "^8.5.6",
+      "tailwindcss": "^4.1.12",
+      "vite": "^5.1.0"
+    }
+  },
+  "files": {
+    "present": {
+      "vercel.json": true,
+      "tailwind.config.js": true,
+      "postcss.config.js": true
+    }
+  },
+  "diff": "diff --git a/package.json b/package.json\nindex 1b25ffc..3b36ae8 100644\n--- a/package.json\n+++ b/package.json\n@@ -7,7 +7,9 @@\n     \"dev\": \"vite\",\n     \"build\": \"vite build\",\n     \"preview\": \"vite preview\",\n-    \"test\": \"echo \\\"No tests\\\"\"\n+    \"test\": \"echo \\\"No tests\\\"\",\n+    \"snapshot\": \"node scripts/context-snapshot.mjs\",\n+    \"restore\": \"node scripts/context-restore.mjs\"\n   },\n   \"dependencies\": {\n     \"date-fns\": \"^4.1.0\",",
+  "notes": "Tailwind v4 setup, study table, filters, CSV, edit/delete, datepicker, tabs; next: PR -> merge, Vercel connect, improve popover close UX."
+}

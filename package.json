@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"No tests\""
+    "test": "echo \"No tests\"",
+    "snapshot": "node scripts/context-snapshot.mjs",
+    "restore": "node scripts/context-restore.mjs"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
