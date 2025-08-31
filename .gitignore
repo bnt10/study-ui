@@ -15,3 +15,6 @@ yarn-error.log*
 .idea/
 .DS_Store
 
+# Dev-only context snapshots (ignored on all branches; keep tools on feature branches only)
+.codex/
+scripts/context-*.mjs

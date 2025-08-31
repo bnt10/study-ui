@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "test": "echo \"No tests\"",
     "snapshot": "node scripts/context-snapshot.mjs",
-    "restore": "node scripts/context-restore.mjs"
+    "restore": "node scripts/context-restore.mjs",
+    "setup-hooks": "node scripts/setup-hooks.mjs",
+    "pr": "node scripts/pr-create-with-snapshot.mjs"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
